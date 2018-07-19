@@ -12,6 +12,6 @@ import java.lang.reflect.Field;
 public class RemarkJsonFieldValueStrategy extends JsonFieldValueStrategy {
     @Override
     public Object getValue(String doc, Field field) {
-        return doc + String.format(" 【%s】", field.getType().getSimpleName());
+        return doc + String.format(" %s", field.getType().getSimpleName());
     }
 }
